@@ -38,7 +38,7 @@ updateCarousel();
 const menuToggle = document.querySelector('.header-burger');
 const menu = document.querySelector('.header-burger-menu');
 
-menuToggle.addEventListener('click', () => {
-    menuToggle.classList.toggle('active');
-    menu.classList.toggle('active');
-});
+// menuToggle.addEventListener('click', () => {
+//     menuToggle.classList.toggle('active');
+//     menu.classList.toggle('active');
+// });
