@@ -68,10 +68,32 @@ header {
     transition: transform 0.4s, opacity 0.4s;
 }
 .header-burger-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    font-size: 1.5rem;
+    gap: 1rem;
+    width: 100%;
+}
+#header-burger-menu-close {
+    font-size: 3rem;
+    padding: 0.5rem;
+    position: absolute;
+    right: 1rem;
+}
+.header-burger-menu-wrapper {
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 99;
+    position: absolute;
+    width: 100%;
     display: none;
 }
-.header-burger-menu.active {
-    display: block;
+.header-burger-menu-icon-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 #section-1 {

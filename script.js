@@ -36,12 +36,18 @@ nextBtn.addEventListener('click', () => {
 updateCarousel();
 
 const menuToggle = document.querySelector('.header-burger');
-const menu = document.querySelector('.header-burger-menu');
+const menu = document.querySelector('.header-burger-menu-wrapper');
+const closeBurgerMenu = document.querySelector('#header-burger-menu-close');
 
-// menuToggle.addEventListener('click', () => {
-//     menuToggle.classList.toggle('active');
-//     menu.classList.toggle('active');
-// });
+closeBurgerMenu.addEventListener('click', () => {
+    menu.style.display = 'none';
+    document.body.classList.remove('modal-open');
+});
+
+menuToggle.addEventListener('click', () => {
+    menu.style.display = 'flex';
+    document.body.classList.add('modal-open');
+});
 
 const modal = document.getElementById('imageModal');
 const openModalBtns = document.querySelectorAll('.section-2-item-img');
