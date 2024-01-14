@@ -38,6 +38,14 @@ updateCarousel();
 const menuToggle = document.querySelector('.header-burger');
 const menu = document.querySelector('.header-burger-menu-wrapper');
 const closeBurgerMenu = document.querySelector('#header-burger-menu-close');
+const burgerMenuItems = document.querySelectorAll('.header-burger-menu-item');
+
+burgerMenuItems.forEach((burgerMenuItem) => {
+    burgerMenuItem.addEventListener('click', () => {
+        menu.style.display = 'none';
+        document.body.classList.remove('modal-open');
+    });
+});
 
 closeBurgerMenu.addEventListener('click', () => {
     menu.style.display = 'none';
