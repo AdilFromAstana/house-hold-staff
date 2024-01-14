@@ -60,7 +60,7 @@
         <main>
             <div id="imageModal" class="modal">
                 <span class="close" id="closeModalBtn">&times;</span>
-                <img src="your-image.jpg" alt="Opened Image" />
+                <img src="" alt="Opened Image" />
                 <div class="modal-buttons-group">
                     <button id="prevImageBtn" class="nav-btn">&lt;</button>
                     <button id="nextImageBtn" class="nav-btn">&gt;</button>
@@ -123,13 +123,13 @@
                     <div class="carousel">
                         <div id="videos-group">
                             <div class="video-slide" id="video-slide-1">
-                                <video controls>
+                                <video controls class="video-slide-item">
                                     <source src="pictures/video-1.mp4" type="video/mp4" />
                                     Ваш браузер не поддерживает видео в формате MP4.
                                 </video>
                             </div>
                             <div class="video-slide" id="video-slide-2">
-                                <video controls>
+                                <video controls class="video-slide-item">
                                     <source src="pictures/video-2.mp4" type="video/mp4" />
                                     Ваш браузер не поддерживает видео в формате MP4.
                                 </video>
@@ -202,19 +202,56 @@
                     <button>Больше отзывов!</button>
                 </div>
             </section>
+            <section id="section-candidates">
+                <div id="section-candidates-wrapper">
+                    <h2 class="section-candidates-title">Кандидаты</h2>
+                    <div class="section-candidates-list">
+                        <video controls class="section-candidates-item">
+                            <source type="video/mp4" src="./pictures/section-candidates-video-1.mp4" />
+                        </video>
+                        <video controls class="section-candidates-item">
+                            <source
+                                class="section-candidates-item"
+                                type="video/mp4"
+                                src="./pictures/section-candidates-video-2.mp4"
+                            />
+                        </video>
+                        <video controls class="section-candidates-item">
+                            <source
+                                class="section-candidates-item"
+                                type="video/mp4"
+                                src="./pictures/section-candidates-video-3.mp4"
+                            />
+                        </video>
+                        <video controls class="section-candidates-item">
+                            <source
+                                class="section-candidates-item"
+                                type="video/mp4"
+                                src="./pictures/section-candidates-video-4.mp4"
+                            />
+                        </video>
+                        <video controls class="section-candidates-item">
+                            <source
+                                class="section-candidates-item"
+                                type="video/mp4"
+                                src="./pictures/section-candidates-video-5.mp4"
+                            />
+                        </video>
+                    </div>
+                </div>
+            </section>
             <section id="section-6">
-                <h2 class="section-6-title">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</h2>
+                <h2 class="section-6-title">ИНТЕРЕСНО? <br />НАПИШИТЕ НАМ И МЫ ВАС ПРОКОНСУЛЬТИРУЕМ!</h2>
                 <div class="section-6-form">
                     <input placeholder="Имя" type="text" class="section-6-form-input" id="form-name" />
                     <div class="section-6-form-contacts">
-                        <input placeholder="Почта" type="text" class="section-6-form-input" id="form-email" />
                         <input placeholder="Номер телефона" type="text" class="section-6-form-input" id="form-phone" />
                     </div>
                     <label class="section-6-form-checkbox">
                         <input type="checkbox" />
                         Я даю согласие на сбор и обработку данных
                     </label>
-                    <button class="section-6-form-button">ЗАКАЗАТЬ ЗВОНОК</button>
+                    <a class="section-6-form-button">Перейти в чат</a>
                 </div>
             </section>
         </main>
