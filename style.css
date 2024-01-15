@@ -582,6 +582,9 @@ footer {
     .section-5-list {
         grid-template-columns: repeat(1, 1fr);
     }
+    .section-5-item {
+        display: block;
+    }
     .section-6-title {
         text-align: center;
         font-size: 1.25rem;
