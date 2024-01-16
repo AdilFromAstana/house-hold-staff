@@ -116,7 +116,7 @@ header {
 }
 .section-1-content-title {
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 .section-1-content-subtitle {
     font-size: 2rem;
@@ -149,13 +149,11 @@ header {
     color: #fff;
     border-radius: 30px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 1.5rem;
+    justify-content: center;
 }
 .section-2-item-img {
-    width: 100%;
-    height: 100%;
+    width: 75%;
+    height: auto;
     display: block;
     padding: 0.5rem;
     border-radius: 30px;
@@ -217,6 +215,12 @@ header {
     border-radius: 50%;
     background-color: #27c6ed;
 }
+.section-3-left-circle-yellow {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #edea27;
+}
 #section-4 {
     padding: 5vh 10vw;
     background: #009bc1;
@@ -231,7 +235,8 @@ header {
     position: relative;
 }
 .video-slide {
-    width: 30vw;
+    right: 0;
+    left: 0;
     position: absolute;
 }
 video {
@@ -246,7 +251,7 @@ video {
     justify-content: space-between;
     width: 100%;
     position: absolute;
-    bottom: 50%;
+    top: 45%;
 }
 #prevBtn,
 #nextBtn {
@@ -267,7 +272,6 @@ video {
     justify-content: space-between;
 }
 .section-4-item {
-    font-weight: 900;
     font-size: 1.25rem;
 }
 #section-5 {
@@ -284,14 +288,13 @@ video {
     font-weight: 900;
 }
 .section-5-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+    display: flex;
+    justify-content: center;
 }
 .section-5-item {
     border-radius: 35px;
-    display: grid;
-    grid-template-rows: 60% 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
     background-color: #2d6f8f;
 }
@@ -429,6 +432,9 @@ footer {
     flex-direction: column;
     align-items: center;
 }
+.footer-push-title {
+    font-size: 0.75rem;
+}
 .modal-open {
     overflow: hidden;
 }
@@ -515,13 +521,14 @@ footer {
         height: 40vh;
     }
     .section-1-content {
+        gap: 1rem;
         padding-left: 8px;
         top: 12px;
         right: 0px;
         width: 50vw;
     }
     .section-1-content-title {
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
     .section-1-content-subtitle {
         font-size: 0.75rem;
@@ -536,6 +543,9 @@ footer {
     }
     .section-2-item {
         padding: 0.75rem;
+    }
+    .section-2-item-img {
+        width: 100%;
     }
     .section-3-wrapper {
         display: flex;
@@ -572,6 +582,9 @@ footer {
     video {
         width: 80vw;
         height: 40vh;
+    }
+    .carousel {
+        width: 100%;
     }
     .video-slide {
         width: 100%;
