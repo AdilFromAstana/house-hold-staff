@@ -128,6 +128,13 @@ header {
     background: #fff684;
     border-radius: 30px;
     padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.section-1-content-link img {
+    width: 32px;
+    height: 32px;
 }
 #section-2 {
     background: #fff;
@@ -145,7 +152,6 @@ header {
     gap: 1rem;
 }
 .section-2-item {
-    background: #009bc1;
     color: #fff;
     border-radius: 30px;
     display: flex;
@@ -180,14 +186,11 @@ header {
     flex-direction: column;
     gap: 1rem;
 }
+.section-3-left-title,
+.section-3-left-title span,
 .section-3-left-subtitle {
     font-size: 2.25rem;
-}
-.section-3-left-title {
-    font-size: 2.25rem;
-}
-.section-3-left-title span {
-    color: #fff684;
+    color: #27c6ed;
 }
 .section-3-left-question-list {
     display: flex;
@@ -263,6 +266,7 @@ video {
     color: #fff684;
 }
 .section-4-content {
+    margin: 2rem 0;
     display: grid;
     grid-template-columns: 45% 55%;
 }
