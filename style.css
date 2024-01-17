@@ -566,6 +566,9 @@ footer {
         padding-left: 30px;
         font-size: 0.75rem;
     }
+    .section-1-content-link-group {
+        padding-left: 30px;
+    }
     .section-1-content-link {
         font-size: 0.5rem;
         padding: 4px 10px;
@@ -663,5 +666,14 @@ footer {
     .section-candidates-item {
         width: 75vw;
         height: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .section-1-img {
+        height: 50vh;
+    }
+    .section-1-content-link-group {
+        padding-left: 0px;
     }
 }
