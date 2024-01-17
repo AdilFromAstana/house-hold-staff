@@ -1,3 +1,20 @@
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(7.5px);
+    }
+    50% {
+        transform: translateY(-7.5px);
+    }
+}
+
+.bounce {
+    animation-name: bounce;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -95,7 +112,6 @@ header {
     align-items: center;
     gap: 1rem;
 }
-
 #section-1 {
     position: relative;
 }
@@ -187,7 +203,6 @@ header {
     gap: 1rem;
 }
 .section-3-left-title,
-.section-3-left-title span,
 .section-3-left-subtitle {
     font-size: 2.25rem;
     color: #27c6ed;
